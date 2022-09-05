@@ -172,7 +172,8 @@ function translateInitialization() {
 $('#menu-backward').on('click', function () { window.history.back(); });
 $('#menu-forward').on('click', function () { window.history.forward(); });
 $('#menu-refresh').on('click', function () { window.location.reload(); });
-$('#menu-darkmode').on('click', function () { switchDarkMode() });
+$('#menu-darkmode').on('click', function () { switchNightMode() });
+// switchDarkMode()
 $('#menu-home').on('click', function () { window.location.href = window.location.origin; });
 /* 简体繁体切换 */
 $('#menu-translate').on('click', function () {
