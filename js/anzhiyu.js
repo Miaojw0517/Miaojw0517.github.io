@@ -13,14 +13,14 @@ var anzhiyu = {
     let msgPause = '<i class="fa-solid fa-pause"></i><span>暂停音乐</span>'; // 同上，但兩處均不建議更改
     if (anzhiyu_musicPlaying) {
       document.querySelector("#nav-music").classList.remove("playing");
-      document.getElementById("menu-music-toggle").innerHTML = msgPlay;
+      // document.getElementById("menu-music-toggle").innerHTML = msgPlay;
       document.getElementById("nav-music-hoverTips").innerHTML = "音乐已暂停";
       anzhiyu_musicPlaying = false;
       document.querySelector("#nav-music").classList.remove("stretch");
       anzhiyu_musicStretch = false;
     } else {
       document.querySelector("#nav-music").classList.add("playing");
-      document.getElementById("menu-music-toggle").innerHTML = msgPause;
+      // document.getElementById("menu-music-toggle").innerHTML = msgPause;
       anzhiyu_musicPlaying = true;
       document.querySelector("#nav-music").classList.add("stretch");
       anzhiyu_musicStretch = true;
@@ -59,4 +59,4 @@ var anzhiyu = {
   },
 };
 
-addRightMenuClickEvent();
+// addRightMenuClickEvent();

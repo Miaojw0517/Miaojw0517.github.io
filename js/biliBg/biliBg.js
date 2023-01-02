@@ -3,7 +3,7 @@ var $biliBannerParentsEl = document.getElementById("page-header");
 //- 创建脚本节点
 var biliBannerScript = document.createElement("script");
 biliBannerScript.type = "text/javascript";
-console.info(biliBannerIndex);
+console.log('biliBannerIndex', biliBannerIndex);
 if (biliBannerIndex === 0) {
   //- autumn
   $biliBannerParentsEl.insertAdjacentHTML(
