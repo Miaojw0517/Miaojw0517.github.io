@@ -1,3 +1,4 @@
+let rmf = {};
 //22.12.8 update：add mask
 //22.12.9 update: add search in this page
 function setMask(){//设置遮罩层
@@ -50,7 +51,6 @@ function insertAtCursor(myField, myValue) {
         myField.focus();
     }
 }
-let rmf = {};
 rmf.showRightMenu = function (isTrue, x = 0, y = 0) {
     let $rightMenu = $('#rightMenu');
     $rightMenu.css('top', x + 'px').css('left', y + 'px');
