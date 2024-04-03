@@ -155,11 +155,11 @@ var knight = {
           clearInterval(timer)
           anMusicBg.style.backgroundImage = musiccover.style.backgroundImage;
           // 绑定事件
-          anzhiyu.addEventListenerChangeMusicBg();
+          knight.addEventListenerChangeMusicBg();
           
           // 暂停nav的音乐
           if (document.querySelector("#nav-music meting-js").aplayer && !document.querySelector("#nav-music meting-js").aplayer.audio.paused){
-            anzhiyu.musicToggle()
+            anzhiyu.musicToggle();
           }
         }
       }, 100)
@@ -170,7 +170,7 @@ var knight = {
     const aplayerIconMenu = anMusicPage.querySelector(".aplayer-info .aplayer-time .aplayer-icon-menu");
 
     anMusicPage.querySelector("meting-js").aplayer.on('loadeddata', function () {
-      anzhiyu.changeMusicBg();
+      knight.changeMusicBg();
       console.info('player loadeddata');
     });
 
